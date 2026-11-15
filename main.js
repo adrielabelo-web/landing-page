@@ -191,6 +191,25 @@
     refresh();
   });
 
+  /* ── Fundo desfocado dos prints: cada cartão usa o próprio print, borrado, para preencher a sobra ─ */
+  // Só carrega quando o carrossel chega perto da tela, para não baixar todos os prints na abertura da página.
+  var blurCars = document.querySelectorAll("[data-carousel]");
+  if (blurCars.length && "IntersectionObserver" in window) {
+    var bo = new IntersectionObserver(function (es) {
+      es.forEach(function (e) {
+        if (!e.isIntersecting) return;
+        bo.unobserve(e.target);
+        e.target.querySelectorAll(".shot:not(.shot--chat)").forEach(function (btn) {
+          var im = btn.querySelector("img");
+          if (!im) return;
+          btn.style.setProperty("--shot", 'url("' + im.getAttribute("src") + '")');
+          btn.classList.add("has-bg");
+        });
+      });
+    }, { rootMargin: "600px 0px" });
+    blurCars.forEach(function (c) { bo.observe(c); });
+  }
+
   /* ── Contagem dos números do placar (valores finais já estão no HTML) ─ */
   var counters = document.querySelectorAll("[data-count]");
   if (counters.length && !reduceMotion && "IntersectionObserver" in window) {
