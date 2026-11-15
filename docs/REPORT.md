@@ -1,3 +1,22 @@
+# Relatório
+
+## Revisão 4 · 15/11/2026
+- **Páginas legais:** `privacidade.html` e `termos.html`, ligadas no rodapé. O contato é por DM no Instagram e no X, porque nenhum e-mail foi confirmado. A duração do acesso de fundador não é citada: os termos remetem à página de venda e ao checkout.
+- **Números:** o texto virou "Todos esses resultados foram obtidos sem aparecer, apenas com um personagem de IA." O aviso embaixo do carrossel virou a nota sobre os insights do Facebook, do Instagram e da Kiwify. O aviso de resultados continua no rodapé, no simulador e nos termos.
+- **Dificuldades:** fundo com grade e luz azul, e o desenho "mesmo prompt, cinco rostos diferentes" (SVG próprio).
+- **Método:** 6 passos (Nicho, Personagem, Processo criativo, Produção, Funil, Monetização), em 3 colunas no desktop. As ilustrações de Nicho e Monetização são geradas por `tools/illos.mjs`, no estilo das outras quatro.
+- **Três formas:** painel com luz e grade, cards com ícone, e a ficha do personagem que se desenha ao entrar na tela (`[data-draw]` no `main.js`; aparece pronta sem JS ou com reduced motion).
+- **Quem fala:** foi para depois do FAQ. A foto original tem 150 px, então agora sai em 300 px e aparece em até 150 px. Para aparecer maior, é preciso uma foto original maior.
+- **Rodapé:** aviso de que o site não faz parte da Meta.
+- **Domínio e Pixel:** `skylabcommunity.com.br` no `CNAME`, no canonical e no og:image. Pixel `1687925566262146` ativo.
+- **Checagens:** 0 scroll horizontal em 8 larguras, 0 erros 404, 0 erros no console, 0 imagens quebradas, axe com 0 violações (index, privacidade e termos), termos proibidos em 0.
+
+## Revisão 5 · 15/11/2026
+- **Provas sociais (`#provas`, entre a comunidade e a oferta):** dois prints de WhatsApp num carrossel de arrastar, com lightbox. O cabeçalho de cada conversa (nome e foto da pessoa) foi cortado. No segundo print, uma palavra foi removida a pedido do autor. Gerados por `tools/social.mjs`.
+- **Comunidade:** a lista foi dividida em "O que você já encontra" e "O que entra com o tempo" (calls com convidados, calls de tráfego pago, vendas e diversificação de receita, métodos novos). Entrou a frase do ecossistema de IA, digital e vendas online. O que ainda não existe fica numa caixa tracejada, separado do que já é entregue.
+- **Foto:** nova original de 607 px. Sai em 560 px e aparece em até 260 px.
+- **Checagens:** as mesmas da revisão 4, todas em 0. O site tem 73 arquivos.
+
 # Relatório · Revision Brief 3
 
 ## 1. Bugs
@@ -122,5 +141,5 @@ calc({ views: 1000000, ctr: 0.2, conv: 2.5, price: 19.9 })
 
 ## Pendências (as mesmas de antes)
 - **REVIEW:** frases do método, "isso pode pagar bem" e tempo por vídeo no FAQ.
-- **CONFIRM:** duração do acesso do fundador, links de privacidade e termos, URL absoluta do og:image, IDs do GTM e do Pixel.
+- **CONFIRM:** duração do acesso do fundador, links de privacidade e termos, ID do GTM. (Pixel 1687925566262146 instalado. O og:image já usa `https://skylabcommunity.com.br/`.)
 - **Prints do X** para o bloco "ONDE TUDO COMEÇOU", que continua marcado no HTML.

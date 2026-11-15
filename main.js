@@ -261,6 +261,20 @@
     if (offer) io.observe(offer);
   }
 
+  /* ── Desenhos que se traçam ao entrar na tela ([data-draw]) ── */
+  // Sem JS ou com reduced motion o desenho já aparece completo: a classe que esconde os traços só entra aqui.
+  var draws = document.querySelectorAll("[data-draw]");
+  if (draws.length && !reduceMotion && "IntersectionObserver" in window) {
+    var dio = new IntersectionObserver(function (es) {
+      es.forEach(function (e) {
+        if (e.isIntersecting) { e.target.classList.add("is-drawn"); dio.unobserve(e.target); }
+      });
+    }, { threshold: 0.35 });
+    draws.forEach(function (el) {
+      if (el.getBoundingClientRect().top > window.innerHeight) { el.classList.add("draw-wait"); dio.observe(el); }
+    });
+  }
+
   /* ── Fade sutil das seções abaixo da dobra ─────────────────── */
   // Só depois que a página carregou e só nos blocos que ainda estão fora da tela,
   // para não custar nada no carregamento nem esconder o que já está visível.

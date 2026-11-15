@@ -23,7 +23,7 @@ O contexto dos 30 dias não coube em duas linhas no lead. Ele entra nos números
 
 ## O bastidor em números
 - Título: O que um personagem que não existe fez em menos de **30 dias**
-- Texto: Nenhum desses vídeos tem rosto meu. O personagem é 100% IA.
+- Texto: Todos esses resultados foram obtidos sem aparecer, apenas com um personagem de IA.
 - Placar:
   - **+ DE 6,4 MI** · EM VISUALIZAÇÕES
   - **+ DE 60 MIL** · SEGUIDORES NOVOS
@@ -39,7 +39,7 @@ O contexto dos 30 dias não coube em duas linhas no lead. Ele entra nos números
   - Métricas do Facebook dia a dia
   - Instagram comparado com perfis da categoria
   - Facebook comparado com páginas da categoria
-- Aviso: Esses resultados são meus, de um período específico. Não são garantia de que você vai ter o mesmo.
+- Nota: Insights de métricas dentro do Facebook e do Instagram, mais o painel de vendas da Kiwify.
 
 ## Principais dificuldades
 - Título: Por que quase todo mundo desiste do vídeo com IA
@@ -50,22 +50,26 @@ O contexto dos 30 dias não coube em duas linhas no lead. Ele entra nos números
   3. Não existe um processo claro do vídeo até a venda.
   4. Não quer aparecer e não sabe gravar.
   5. Os cursos ensinam ferramentas soltas e param antes do dinheiro.
+- Legenda do desenho: MESMO PROMPT. CINCO ROSTOS DIFERENTES.
 
 ## O método
 - Título: O público não segue um vídeo bonito. Ele segue uma **pessoa** que volta todo dia igual.
 - Texto: Um vídeo de 60 segundos é feito de 12 a 17 clipes de 8 segundos. Se um deles sai com outro rosto, a pessoa percebe e vai embora. <!-- REVIEW -->
 - Texto: Quando eu travei o mesmo rosto, a mesma voz e o mesmo cenário em todos os clipes, as pessoas começaram a voltar. Depois vieram os comentários. Depois, as vendas. <!-- REVIEW -->
 - Passos:
-  - **Personagem.** Uma ficha com rosto, voz e cenário. É ela que mantém a mesma pessoa em todos os clipes.
-  - **Roteiro.** Cinco pilares, um mapa da história e modelos de gancho prontos.
-  - **Produção.** O prompt mestre, todos os prompts de imagem e vídeo, e o que fazer quando um filtro bloqueia a geração.
-  - **Funil.** O comentário vira DM, a DM leva ao checkout. Oferta de baixo valor com order bump e combo.
+  - **01 Nicho.** O assunto vem antes do rosto. Um tema que o público comenta e compra todo dia, como receita ou dica da casa.
+  - **02 Personagem.** Uma ficha com rosto, voz e cenário. É ela que mantém a mesma pessoa em todos os clipes.
+  - **03 Processo criativo.** Os roteiros saem de cinco pilares, um mapa da história e modelos de gancho prontos.
+  - **04 Produção.** O prompt mestre, todos os prompts de imagem e vídeo, e o que fazer quando um filtro bloqueia a geração.
+  - **05 Funil.** O comentário vira DM, a DM leva ao checkout. Oferta de baixo valor com order bump e combo.
+  - **06 Monetização.** Além do produto próprio: pagamento por views no Facebook e no TikTok, afiliado de marketplaces e grupos de ofertas no WhatsApp.
 - Frase: O gancho promete. O storytelling prende. O roteiro entrega.
 
 ### Três formas de ganhar dinheiro com o mesmo personagem
 1. **Produto próprio.** Um ebook de baixo valor vendido pelo caminho comentário, DM e checkout. É o funil exato que está no ebook.
 2. **Monetização da própria plataforma.** Facebook e TikTok pagam criadores elegíveis pelas visualizações. Um personagem que posta todo dia junta essas views, e isso pode pagar bem. <!-- REVIEW -->
-3. **Afiliados.** Divulgar produtos de afiliado em grupos e nos perfis do próprio personagem. Com os mesmos vídeos e a mesma automação de comentário para DM.
+3. **Afiliados de marketplaces.** Divulgar produtos de marketplaces como afiliado, nos perfis do personagem e em grupos de ofertas no WhatsApp. Com os mesmos vídeos e a mesma automação de comentário para DM.
+- Desenho da ficha: FICHA TRAVADA · ROSTO · VOZ · CENÁRIO
 
 ## Por dentro do ebook
 - Título: + de 70 páginas com o processo criativo **completo** do personagem
@@ -106,7 +110,7 @@ O contexto dos 30 dias não coube em duas linhas no lead. Ele entra nos números
   - **Métodos novos com o tempo,** como Motion e distribuição para fora do Brasil.
 - Caixa: PREÇO DE FUNDADOR · Fundador entra por R$ 97. A partir de 01/12, novos membros pagam R$ 59,90 por mês. <!-- CONFIRM: how long the founder access lasts -->
 
-## Quem fala
+## Quem fala (na página, vem depois do FAQ)
 - Foto: retrato 4:5, alt "Adriel Abelo"
 - Título: Eu mostro o **bastidor**
 - Sou o Adriel. Venho do marketing de performance e do tráfego pago.
@@ -115,6 +119,23 @@ O contexto dos 30 dias não coube em duas linhas no lead. Ele entra nos números
 - Os prompts, os números e os erros. Do jeito que eu uso.
 - Eu mostro esse bastidor no X todo dia. Foi lá que esse método começou a chamar atenção.
 - Links: chip `Me siga no X · @Luvidonviski` · `INSTAGRAM @ADRIELABELO`
+
+## Provas sociais (entre a comunidade e a oferta)
+- Etiqueta: QUEM JÁ ESTÁ APLICANDO
+- Título: O que chega no meu WhatsApp de quem **comprou**
+- Texto: Prints reais de conversa. Tirei o nome e a foto de cada pessoa.
+- Legendas:
+  - ALUNO · Vídeo pronto em uns 30 minutos e a automação de comentário respondendo
+  - COMPRADOR · A ficha completa de uma personagem, com ângulos, poses e expressões
+
+### Comunidade: acréscimos da revisão 5
+- Texto: O personagem é o marco inicial da fundação. A partir dele, a comunidade cresce para um ecossistema de IA, digital e vendas online.
+- O QUE ENTRA COM O TEMPO:
+  - **Calls com convidados especiais.** Gente que já escalou muito no digital conta como fez.
+  - **Calls de tráfego pago, vendas e diversificação de receita online.**
+  - **Métodos novos,** como Motion e distribuição para fora do Brasil.
+- Nota: Quem entra na fundação acompanha tudo isso desde o começo.
+- No card da oferta: Com o tempo: calls com convidados, tráfego pago e métodos novos
 
 ## Oferta
 - Título: O que entra na edição de **fundação**
@@ -184,4 +205,4 @@ Linha abaixo dos cards: Dá pra começar pelo ebook e entrar na comunidade depoi
 `R$ 97 FUNDADOR` + `QUERO ENTRAR NA COMUNIDADE`, e embaixo o link `ou só o ebook por R$ 19,90`.
 
 ## Rodapé
-SkyLab IA Community · Adriel Abelo Gonçalves · Instagram @adrielabelo · X @Luvidonviski · Política de privacidade [CONFIRMAR LINK] · Termos de uso [CONFIRMAR LINK] · Resultados não são garantia.
+SkyLab IA Community · Adriel Abelo Gonçalves · Instagram @adrielabelo · X @Luvidonviski · Política de privacidade (`privacidade.html`) · Termos de uso (`termos.html`) · Resultados não são garantia. · Este site não faz parte do Facebook, do Instagram nem da Meta Platforms, Inc. e não é patrocinado ou endossado pela Meta.

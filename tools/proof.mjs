@@ -46,8 +46,8 @@ for (const [name, src, blur, cropTop = 0] of proofs) {
   sizes[name] = [meta.width, height];
 }
 
-// Foto do Adriel: original 150x150 -> retrato 4:5, ampliado com nitidez leve
-await sharp(ORIG + "adriel.png").extract({ left: 15, top: 0, width: 120, height: 150 }).resize({ width: 320, kernel: "lanczos3" }).sharpen({ sigma: 0.8 }).webp({ quality: 88 }).toFile(path.join(out, "adriel-320.webp"));
+// Foto do Adriel: o original tem só 150x150. Sai em 300x300 (2x) e aparece em até 150 px na página, para ficar nítida.
+await sharp(ORIG + "adriel.png").resize(300, 300, { kernel: "lanczos3" }).sharpen({ sigma: 0.6, m1: 0.6, m2: 1.2 }).webp({ quality: 90 }).toFile(path.join(out, "adriel-300.webp"));
 // Avatar do X: 144 px (56 px na tela @2x+)
 await sharp(ORIG + "x-avatar.png").resize(144, 144).webp({ quality: 85 }).toFile(path.join(out, "x-avatar-144.webp"));
 

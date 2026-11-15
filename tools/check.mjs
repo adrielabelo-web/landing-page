@@ -86,7 +86,7 @@ for (const w of widths) {
     }
     // carrossel: arrastar com o mouse
     await page.locator("#numeros .carousel").scrollIntoViewIfNeeded();
-    const track = page.locator("[data-car-track]");
+    const track = page.locator("#numeros [data-car-track]");
     const box = await track.boundingBox();
     const before = await track.evaluate(t => t.scrollLeft);
     await page.mouse.move(box.x + box.width * 0.7, box.y + box.height / 2);
@@ -95,13 +95,13 @@ for (const w of widths) {
     await page.mouse.up();
     await page.waitForTimeout(900);
     const after = await track.evaluate(t => t.scrollLeft);
-    const counter = await page.locator("[data-car-index]").textContent();
+    const counter = await page.locator("#numeros [data-car-index]").textContent();
     const lbOpenAfterDrag = await page.evaluate(() => document.getElementById("lightbox").open);
-    await page.click("[data-car-next]"); await page.waitForTimeout(700);
-    const counterNext = await page.locator("[data-car-index]").textContent();
+    await page.click("#numeros [data-car-next]"); await page.waitForTimeout(700);
+    const counterNext = await page.locator("#numeros [data-car-index]").textContent();
     report.carouselDrag = { before, after, counter, counterNext, lightboxOpenedByDrag: lbOpenAfterDrag };
     // lightbox com setas
-    await page.locator("[data-car-track] .shot").nth(Number(counterNext) - 1).click();
+    await page.locator("#numeros [data-car-track] .shot").nth(Number(counterNext) - 1).click();
     await page.waitForTimeout(300);
     const lb1 = await page.evaluate(() => ({ open: document.getElementById("lightbox").open, count: document.getElementById("lightbox-count").textContent, focus: document.activeElement.className }));
     await page.keyboard.press("ArrowRight"); await page.waitForTimeout(150);
