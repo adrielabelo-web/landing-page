@@ -33,3 +33,34 @@ await sharp(path.join(src, "originais", "adriel-607.jpg"))
   .extract({ left: 26, top: 0, width: 556, height: 556 })
   .resize(560, 560, { kernel: "lanczos3" }).webp({ quality: 84 }).toFile(path.join(out, "adriel-560.webp"));
 await log("adriel-560.webp");
+
+// 4) personagens de exemplo (gerados no ChatGPT pelo autor): A = mulher, recorte 3:4 para a fileira "mesmo rosto"; B = homem, quadrado para a ficha
+const av = path.join(src, "avatars");
+{
+  const m = await sharp(path.join(av, "avatar-a.png")).metadata();
+  const k = m.width / 1254;
+  await sharp(path.join(av, "avatar-a.png")).extract({ left: Math.round(190 * k), top: Math.round(40 * k), width: Math.round(874 * k), height: Math.round(1165 * k) })
+    .resize(360, 480).webp({ quality: 80 }).toFile(path.join(out, "avatar-a.webp"));
+  await log("avatar-a.webp");
+  await sharp(path.join(av, "avatar-b.png")).resize(480, 480).webp({ quality: 80 }).toFile(path.join(out, "avatar-b.webp"));
+  await log("avatar-b.webp");
+}
+
+// 5) segundo feedback de aluno (WhatsApp claro): corta a barra do celular e o cabeçalho com nome e foto
+{
+  const p = path.join(src, "social", "aluno-feedback-2.png");
+  const m = await sharp(p).metadata();
+  const k = m.width / 1170;
+  const top = Math.round(328 * k);
+  await sharp(p).extract({ left: 0, top, width: m.width, height: m.height - top }).resize({ width: 960 }).webp({ quality: 86 }).toFile(path.join(out, "prova-aluno-2.webp"));
+  await log("prova-aluno-2.webp");
+}
+// 6) app da Kiwify, receita dos últimos 30 dias: corta a barra do celular e o menu de baixo
+{
+  const p = path.join(src, "originais", "kiwify-app.png");
+  const m = await sharp(p).metadata();
+  const k = m.width / 739;
+  const top = Math.round(120 * k), bottom = Math.round(1445 * k);
+  await sharp(p).extract({ left: 0, top, width: m.width, height: bottom - top }).resize({ width: 739, withoutEnlargement: true }).webp({ quality: 86 }).toFile(path.join(out, "kiwify-app.webp"));
+  await log("kiwify-app.webp");
+}

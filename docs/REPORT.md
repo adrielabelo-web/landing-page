@@ -11,6 +11,22 @@
 - **Domínio e Pixel:** `skylabcommunity.com.br` no `CNAME`, no canonical e no og:image. Pixel `1687925566262146` ativo.
 - **Checagens:** 0 scroll horizontal em 8 larguras, 0 erros 404, 0 erros no console, 0 imagens quebradas, axe com 0 violações (index, privacidade e termos), termos proibidos em 0.
 
+## Revisão 7 · 15/11/2026
+- **Tema claro:** `data-theme="light"` no `<html>` das três páginas, com fundo branco e o gradiente em azul claro da marca. Placar, painel de monetização, simulador, CTA final e barra fixa continuam escuros (`data-theme="dark"` em cada bloco). Preços em verde (`--price`).
+- **Números:** o print do painel desktop da Kiwify saiu. Entrou o do app, com a receita dos últimos 30 dias (R$ 2.753,34). O "arraste para ver mais" virou uma frase em primeira pessoa.
+- **Dificuldades:** 8 itens (entraram método, processo criativo e público-alvo/ICP) e a frase sobre o personagem ir além da imagem.
+- **Método:** nova headline sobre entretenimento e identidade, passo 07 (Marca própria: e-commerce, produto próprio, apps) e nova frase de fechamento.
+- **Monetização:** novo título e a quarta forma, Marca própria.
+- **Mercado (`#mercado`, depois do método):** 7 números grandes com contagem, 3 alertas e um fechamento com botões (`market-community`, `market-ebook`). **Todos os números foram enviados pelo autor, com fonte e data, e não foram conferidos por mim nas fontes originais.** A leitura sobre os 77% está marcada na página como opinião do autor.
+- **Provas sociais:** terceiro print (aluno), sem nome e sem foto.
+- **Contagem:** rede de segurança no `main.js` para número que ficou em zero depois de um salto de rolagem.
+- **Checagens:** 0 scroll horizontal em 8 larguras, 0 erros 404, 0 erros no console, axe com 0 violações nas três páginas, 12 botões com o checkout certo. O site tem 78 arquivos.
+
+## Revisão 6 · 15/11/2026
+- **Fundo em gradiente:** uma camada fixa atrás da página, com luz azul nas laterais, um toque de azul claro no topo e o navy da marca no centro. As faixas ficaram translúcidas para a luz passar. Vale também para as páginas legais.
+- **Personagens de exemplo** (gerados pelo autor no ChatGPT): o homem aparece dentro da ficha, metade traço e metade pronto. A mulher aparece cinco vezes na fileira "MESMA FICHA. O MESMO ROSTO TODO DIA.", antes dos passos, como resposta ao desenho das dificuldades.
+- **Checagens:** todas em 0. O site tem 75 arquivos.
+
 ## Revisão 5 · 15/11/2026
 - **Provas sociais (`#provas`, entre a comunidade e a oferta):** dois prints de WhatsApp num carrossel de arrastar, com lightbox. O cabeçalho de cada conversa (nome e foto da pessoa) foi cortado. No segundo print, uma palavra foi removida a pedido do autor. Gerados por `tools/social.mjs`.
 - **Comunidade:** a lista foi dividida em "O que você já encontra" e "O que entra com o tempo" (calls com convidados, calls de tráfego pago, vendas e diversificação de receita, métodos novos). Entrou a frase do ecossistema de IA, digital e vendas online. O que ainda não existe fica numa caixa tracejada, separado do que já é entregue.

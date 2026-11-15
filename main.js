@@ -210,10 +210,26 @@
         })(t0);
       });
     }, { threshold: 0 });
+    var pending = [];
     counters.forEach(function (el) {
       // só anima o que ainda não está na tela; o resto fica com o valor final
-      if (el.getBoundingClientRect().top > window.innerHeight) { el.textContent = fmt(0, parseInt(el.getAttribute("data-decimals"), 10) || 0); co.observe(el); }
+      if (el.getBoundingClientRect().top > window.innerHeight) { el.textContent = fmt(0, parseInt(el.getAttribute("data-decimals"), 10) || 0); co.observe(el); pending.push(el); }
     });
+    // rede de segurança: um salto de rolagem pode pular o número sem ele cruzar a tela.
+    // Quando a rolagem para, tudo que ficou acima da tela ainda em zero recebe o valor final.
+    var settle;
+    window.addEventListener("scroll", function () {
+      clearTimeout(settle);
+      settle = setTimeout(function () {
+        pending = pending.filter(function (el) {
+          var r = el.getBoundingClientRect();
+          if (r.bottom >= 0) return r.top > window.innerHeight;   // na tela (o observer cuida) ou ainda abaixo
+          co.unobserve(el);
+          el.textContent = fmt(parseFloat(el.getAttribute("data-count")), parseInt(el.getAttribute("data-decimals"), 10) || 0);
+          return false;
+        });
+      }, 140);
+    }, { passive: true });
   }
 
   /* ── Inclinação 3D que segue o ponteiro (só desktop com mouse, sem reduced motion) ─ */

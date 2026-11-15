@@ -4,7 +4,7 @@ Landing page de venda do ebook **Personagem que Vende** e da edição de fundaç
 
 HTML, CSS e JavaScript puros: sem framework e sem dependência externa. As fontes ficam no próprio site. Abre com duplo clique no `index.html` e publica em qualquer hospedagem estática (GitHub Pages, Netlify, Vercel, Hostinger).
 
-## Estrutura (73 arquivos, cabe num upload só)
+## Estrutura (78 arquivos, cabe num upload só)
 
 ```
 index.html        página
@@ -18,7 +18,7 @@ main.js           checkouts, contador, placar, carrossel, lightbox, barra fixa
 sim.js            simulador de vendas (função pura calc() + interface)
 fonts/            Exo 2 (400 a 900 + itálico) e Roboto Mono (500 a 700), WOFF2, licença OFL
 assets/
-  img/            30 imagens WebP (ilustrações, prints, provas sociais, páginas do ebook, foto)
+  img/            35 imagens WebP (ilustrações, prints, provas sociais, personagens de exemplo, páginas do ebook, foto)
   favicon.svg, apple-touch-icon.png, og-image.png
 docs/             COPY.md (texto), REPORT.md (decisões e checagens), auditoria antiga
 tools/            scripts de desenvolvimento (Node), fora do site

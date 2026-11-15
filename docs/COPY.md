@@ -63,6 +63,7 @@ O contexto dos 30 dias não coube em duas linhas no lead. Ele entra nos números
   - **04 Produção.** O prompt mestre, todos os prompts de imagem e vídeo, e o que fazer quando um filtro bloqueia a geração.
   - **05 Funil.** O comentário vira DM, a DM leva ao checkout. Oferta de baixo valor com order bump e combo.
   - **06 Monetização.** Além do produto próprio: pagamento por views no Facebook e no TikTok, afiliado de marketplaces e grupos de ofertas no WhatsApp.
+- Legenda da fileira de rostos: MESMA FICHA. O MESMO ROSTO TODO DIA. (DIA 01 a DIA 05)
 - Frase: O gancho promete. O storytelling prende. O roteiro entrega.
 
 ### Três formas de ganhar dinheiro com o mesmo personagem
@@ -206,3 +207,16 @@ Linha abaixo dos cards: Dá pra começar pelo ebook e entrar na comunidade depoi
 
 ## Rodapé
 SkyLab IA Community · Adriel Abelo Gonçalves · Instagram @adrielabelo · X @Luvidonviski · Política de privacidade (`privacidade.html`) · Termos de uso (`termos.html`) · Resultados não são garantia. · Este site não faz parte do Facebook, do Instagram nem da Meta Platforms, Inc. e não é patrocinado ou endossado pela Meta.
+
+
+## Revisão 7 (15/11/2026): textos novos
+- Números, frase do carrossel: Eu também achava improvável ver essas notificações e esses números em menos de 30 dias. Criar com IA mudou o que eu achava possível.
+- Dificuldades, texto: Criar um personagem vai além de gerar uma imagem ou um vídeo. São os elementos e as variáveis por trás dele que fazem o público se conectar.
+- Dificuldades, itens novos: Falta método. Cada vídeo começa do zero. / Falta processo criativo. Sem roteiro, o vídeo bonito não prende. / Falta definir o público-alvo, o ICP. Sem saber para quem é, o personagem não conecta.
+- Método, título: O público segue entretenimento e **identidade**. É assim que uma marca funciona.
+- Método, texto: Por trás de uma marca quase nunca existe um rosto. Mesmo assim, o público se reconhece nela, aprova e volta, cada pessoa por um motivo. / Um personagem com identidade travada faz o mesmo. Quando eu travei o rosto, a voz e o cenário, as pessoas começaram a voltar. Depois vieram os comentários. Depois, as vendas.
+- Passo 07, Marca própria: O personagem vira o rosto de uma marca sua. Dele saem a loja online, o produto com a sua etiqueta e até um aplicativo. (E-COMMERCE · PRODUTO PRÓPRIO · APPS)
+- Frase: O gancho capta a atenção. A história e o conteúdo prendem. A identidade conecta. E a venda acontece.
+- Monetização, título: Todo dia nasce um jeito novo de monetizar. Todos cabem em **um único perfil**
+- 04 Marca própria: Quem confia no personagem compra o que leva a assinatura dele. Com um e-commerce seu, a venda sai do perfil direto para a sua loja: a margem é sua e o cliente também.
+- Mercado: os textos e as fontes estão no `index.html`, seção `#mercado`. Fechamento: Isso vai além de uma renda extra. IA, internet e conteúdo já sustentam negócios inteiros. Quem aprende o método agora constrói o seu com calma, antes de o mercado lotar.

@@ -120,7 +120,28 @@ function monetizacao() {
   return s;
 }
 
-const jobs = { nicho: nicho(), monetizacao: monetizacao() };
+/* ── MARCA PRÓPRIA: a marca no centro, com loja, app e produto ───── */
+Object.assign(G, {
+  tag: `<path d="M18 18H52L84 50 50 84 18 52Z"/><circle cx="36" cy="36" r="7"/>`,
+  cart: `<path d="M12 22H24L33 62H74L81 34H28"/><circle cx="40" cy="76" r="6"/><circle cx="68" cy="76" r="6"/>`,
+  phone: `<rect x="30" y="10" width="40" height="80" rx="9"/><path d="M44 21H56M40 46H60V66H40Z"/>`,
+  box: `<path d="M18 36 50 20 82 36V66L50 82 18 66Z"/><path d="M18 36 50 52 82 36M50 52V82"/>`,
+});
+function marca() {
+  const cx = S / 2, big = 300, top = 250, tw = 214, ty = 800, xs = [cx - 340, cx, cx + 340];
+  let s = "";
+  xs.forEach((x) => {
+    const d = `M${cx} ${top + big}C${cx} ${top + big + 130} ${x} ${ty - 130} ${x} ${ty}`;
+    s += `<path d="${d}" fill="none" stroke="#3d92ff" stroke-width="10" opacity=".35" filter="url(#blur6)"/><path d="${d}" fill="none" stroke="#4f9ff8" stroke-width="3.5"/>`;
+  });
+  s += hiTile(cx - big / 2, top, big, big, 40) + glyph("tag", cx, top + big / 2, 168, "#ffffff", 7);
+  ["cart", "phone", "box"].forEach((nm, i) => {
+    s += tile(xs[i] - tw / 2, ty, tw, tw) + glyph(nm, xs[i], ty + tw / 2, 112, "#7db8fb", 5.5) + floor(xs[i], ty + tw + 62, 110, .38);
+  });
+  return s;
+}
+
+const jobs = { nicho: nicho(), monetizacao: monetizacao(), marca: marca() };
 for (const [name, body] of Object.entries(jobs)) {
   const svg = Buffer.from(`<svg xmlns="http://www.w3.org/2000/svg" width="${S}" height="${S}" viewBox="0 0 ${S} ${S}">${defs}${body}</svg>`);
   for (const w of [480, 800]) {
